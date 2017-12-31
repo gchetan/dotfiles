@@ -15,6 +15,11 @@ fun! ShowFuncName()
 endfun
 map f :call ShowFuncName() <CR>
 
+fun! GotoFuncName()
+    call getline(search("^[^ \t#/]\\{2}.*[^:]\s*$", 'bW'))
+endfun
+map ff :call GotoFuncName() <CR>
+
 try
     source ~/.dotfiles/vim_runtime/my_configs.vim
 catch
