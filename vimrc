@@ -5,6 +5,11 @@ source ~/.dotfiles/vim_runtime/vimrcs/filetypes.vim
 source ~/.dotfiles/vim_runtime/vimrcs/plugins_config.vim
 source ~/.dotfiles/vim_runtime/vimrcs/extended.vim
 
+" Syntastic checking is disabled by default.
+" Syntastic checking can be done by pressing Ctrl+W and E
+let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
+nnoremap <leader>c :SyntasticCheck<CR> :SyntasticToggleMode<CR>
+
 fun! ShowFuncName()
     let lnum = line(".")
     let col = col(".")
