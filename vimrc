@@ -10,6 +10,10 @@ source ~/.dotfiles/vim_runtime/vimrcs/extended.vim
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
 nnoremap <leader>c :SyntasticCheck<CR> :SyntasticToggleMode<CR>
 
+" Newline without entering the insert mode.
+nmap <CR> o<Esc>
+nmap <C-o> O<Esc>
+
 fun! ShowFuncName()
     let lnum = line(".")
     let col = col(".")
