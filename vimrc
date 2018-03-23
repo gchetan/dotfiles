@@ -12,7 +12,7 @@ nnoremap <leader>c :SyntasticCheck<CR> :SyntasticToggleMode<CR>
 
 " Newline without entering the insert mode.
 nmap <CR> o<Esc>
-nmap <C-o> O<Esc>
+nmap <C-y> O<Esc>
 
 fun! ShowFuncName()
     let lnum = line(".")
