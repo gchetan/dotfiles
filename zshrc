@@ -16,6 +16,9 @@ ZSH_THEME="robbyrussell"
 # An empty array have no effect
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 
+# Skip the verification of insecure directories. Makes zsh work under Root.
+ZSH_DISABLE_COMPFIX=true
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
